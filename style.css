@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.dark-theme{
+    margin-top: 25px;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.dark-theme .nije-aktivno{
+    padding: 20px 45px;
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.dark-theme .nije-aktivno i{
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+    font-size: 20px;
+    color: black;
+    transition: transform 2s ease; 
+}
+
+.dark-theme .nije-aktivno:hover{
+    transition: 1s;
+    background-color: black;
+}
+
+.dark-theme .nije-aktivno:hover i{
+    transform: translateX(250%);
+    color: white;
+}
+
+.dark-theme .aktivno{
+    padding: 20px 45px;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+    transition: 2s;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.dark-theme .aktivno i{
+    position: absolute;
+    bottom: 25%;
+    right: 10%;
+    color: white;
+    font-size: 20px;
+    transition: transform 2s ease;
+}
+
+.dark-theme .aktivno:hover{
+    background-color: white;
+    border: 1px solid black;
+}
+
+.dark-theme .aktivno:hover i{
+    transform: translateX(-250%);
+    color: black;
+}
+
+.dark-theme h1{
+    margin-top: 1%;
+    font-size: 35px;
+    margin-bottom: 5%;
+}
+
+.input-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input-section #add-task{ 
+    width: 80%;
+    height: 50px;
+    padding-left: 25px;
+    border-radius: 25px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.input-section #add-task:focus{ 
+    border: 3px solid black;
+}
+
+.input-section #btn{
+    width: 10%;
+    border-radius: 25px;
+    background-color: transparent;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+}
+@media (max-width: 767px){
+    .input-section{
+        flex-direction: column;
+    }
+
+    .input-section #add-task{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .input-section #btn{
+        width: 82%;
+        height: 50px;
+        margin: auto;
+        margin-bottom: 3%;
+    }
+}
+
+hr{
+    margin-top: 3%;
+}
+
+.task-list{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 2%;
+    font-weight: bold;
+}
+
+.task-list ol{
+    padding-left: 25px;
+}
+
+.task-list ol li{
+    margin-bottom: 23px;
+}
+
+.task-list p{
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.task-list button{
+    margin-right: 15px;
+    padding: 5px 25px;
+    border-radius: 25px;
+    border: 1px solid black;
+    cursor: pointer;
+}
